@@ -3,9 +3,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import dynamic from 'next/dynamic'
-import { supabase } from '../lib/supabase'
+import { supabase } from '../../lib/supabase'
 
-const MapView = dynamic(() => import('../components/MapView'), { ssr: false })
+const MapView = dynamic(() => import('../../components/MapView'), { ssr: false })
 
 // ─── Distance helper ─────────────────────────
 function getDistanceMiles(lat1, lng1, lat2, lng2) {
