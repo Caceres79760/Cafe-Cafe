@@ -3,9 +3,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import dynamic from 'next/dynamic'
-import { supabase } from '../lib/supabase'
+import { supabase } from '../../lib/supabase'
 
-const MapView = dynamic(() => import('../components/MapView'), { ssr: false })
+const MapView = dynamic(() => import('../../components/MapView'), { ssr: false })
 
 // ─── Distance helper ─────────────────────────
 function getDistanceMiles(lat1, lng1, lat2, lng2) {
@@ -23,7 +23,7 @@ function ErrorMessage({message, onRetry}) {
     <div style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',padding:'48px 24px',textAlign:'center',gap:16}}>
       <div style={{fontSize:40}}>⚠️</div>
       <p style={{fontFamily:"'Cormorant Garamond',serif",fontSize:22,color:'var(--text-1)',fontWeight:700}}>Something went wrong</p>
-      <p style={{fontSize:14,color:'var(--text-3)',maxWidth:320,lineHeight:1.6}}>{message||'We couldn't load this content. Please try again.'}</p>
+      <p style={{fontSize:14,color:'var(--text-3)',maxWidth:320,lineHeight:1.6}}>{message||"We couldn't load this content. Please try again."}</p>
       {onRetry&&(
         <button onClick={onRetry} className="btn-primary" style={{fontSize:14,padding:'10px 24px'}}>Try Again</button>
       )}
