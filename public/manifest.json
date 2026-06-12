@@ -1,0 +1,22 @@
+{
+  "name": "Café Café",
+  "short_name": "Café Café",
+  "description": "Discover and rate independent coffee shops in Rochester, NY.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#0f0c09",
+  "theme_color": "#1a1512",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ]
+}
