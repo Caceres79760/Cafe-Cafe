@@ -1,4 +1,4 @@
-# ☕ Café Café — v2 (with Supabase)
+# ☕ Café Café — v23 (with Supabase)
 
 ## What's new in this version
 - Real database — visits are saved permanently to Supabase
